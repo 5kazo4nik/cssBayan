@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap');
+
+body {
+  background-color: #f5f5dc;
+  width: 80%;
+  margin: 0 auto 0 auto;
+  padding-top: 4vh;
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 6.5em;
+  font-weight: bold;
+  font-family: 'Inika', serif;
+  padding: 1.2vh 0;
+  border-bottom: 0.3vh solid rgba(197, 197, 231, 0.61);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 3.5em;
+  font-family: 'Inika', serif;
+  font-weight: bold;
+  cursor: pointer;
+  color: rgb(84, 84, 233);
+  transition: 0.2s;
+}
+
+ul:hover {
+  color: #000;
+}
+
+/* //////////////////////////////////////////////////// */
