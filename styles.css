@@ -33,3 +33,32 @@ ul:hover {
 }
 
 /* //////////////////////////////////////////////////// */
+
+.list-item {
+  /* height: 4vh; */
+  height: 3rem;
+  padding: 1vh 0 2vh 0;
+  margin: 0;
+  border-bottom: 0.3vh solid rgba(197, 197, 231, 0.61);
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.list-item p {
+  margin: 0;
+}
+
+.list-item:hover {
+  height: 45vh;
+}
+
+.list-item:focus {
+  height: 45vh;
+  color: #000;
+  outline: none;
+}
+
+.list-item:active {
+  color: rgb(84, 84, 233);
+  opacity: 0.5;
+}
