@@ -62,3 +62,36 @@ ul:hover {
   color: rgb(84, 84, 233);
   opacity: 0.5;
 }
+
+/* ////////////////////////////////////////////////////// */
+
+.list-item__content {
+  margin: 0 0vh 1vh 0vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* //////////////////////////////////////////////////// */
+
+.cross {
+  width: 3vw;
+  height: 3vh;
+  background-image: url(./assets/icons/icons8-крестик-xbox-30.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+ul:hover .cross {
+  opacity: 1;
+}
+
+.list-item:hover .cross {
+  background-image: url(./assets/icons/icons8-умножение-30.png);
+}
+
+ul:hover .list-item:focus .cross {
+  background-image: url(./assets/icons/icons8-умножение-30.png);
+}
