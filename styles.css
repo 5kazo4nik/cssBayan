@@ -95,3 +95,27 @@ ul:hover .cross {
 ul:hover .list-item:focus .cross {
   background-image: url(./assets/icons/icons8-умножение-30.png);
 }
+
+/* ///////////////////////////////////////////////////////////// */
+
+.image {
+  width: 40vh;
+  height: 38vh;
+  margin: 0 auto 0 auto;
+  transform: scale(0);
+  transition: 0.3s;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.list-item:hover .image {
+  transform: scale(1);
+}
+
+.list-item:focus .image {
+  transform: scale(1);
+}
