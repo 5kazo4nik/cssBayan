@@ -75,12 +75,11 @@ ul {
   transition: 0.8s;
 }
 
-.list-item:focus .cross {
+/* .list-item:focus .cross {
   opacity: 1;
-}
+} */
 
 .list-item:focus .cross {
-  /* background-image: url(./assets/icons/icons8-умножение-30.png); */
   transform: rotate(-45deg) translate(15%, -30%);
 }
 
@@ -104,12 +103,9 @@ ul {
   transform: scale(1);
 }
 
-/* ul:hover {
-  color: #000;
-}
 ul:hover .cross {
   opacity: 1;
-} */
+}
 
 @media (hover: hover) {
   .list-item:hover {
@@ -120,7 +116,6 @@ ul:hover .cross {
   }
 
   .list-item:hover .cross {
-    /* background-image: url(./assets/icons/icons8-умножение-30.png); */
     transform: rotate(-45deg) translate(15%, -30%);
   }
 
@@ -129,14 +124,10 @@ ul:hover .cross {
   }
 
   ul:hover {
-    color: #000;
-  }
-  ul:hover .cross {
-    opacity: 1;
+    color: rgb(84, 84, 233);
   }
 
   ul:hover .list-item:focus .cross {
-    /* background-image: url(./assets/icons/icons8-умножение-30.png); */
     transform: rotate(-45deg) translate(15%, -30%);
   }
 }
