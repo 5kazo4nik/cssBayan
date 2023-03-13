@@ -75,12 +75,9 @@ ul {
   transition: 0.8s;
 }
 
-/* .list-item:focus .cross {
-  opacity: 1;
-} */
-
 .list-item:focus .cross {
-  transform: rotate(-45deg) translate(15%, -30%);
+  /* transform: rotate(-45deg) translate(15%, -30%); */
+  transform: rotate(-45deg);
 }
 
 /* ///////////////////////////////////////////////////////////// */
@@ -116,7 +113,7 @@ ul:hover .cross {
   }
 
   .list-item:hover .cross {
-    transform: rotate(-45deg) translate(15%, -30%);
+    transform: rotate(-45deg);
   }
 
   .list-item:hover .image {
@@ -128,7 +125,7 @@ ul:hover .cross {
   }
 
   ul:hover .list-item:focus .cross {
-    transform: rotate(-45deg) translate(15%, -30%);
+    transform: rotate(-45deg);
   }
 }
 
@@ -148,10 +145,6 @@ ul:hover .cross {
 
   .cross {
     opacity: 1;
-  }
-
-  .list-item:focus .cross {
-    transform: rotate(-45deg) translate(10%, 0%);
   }
 }
 
@@ -180,9 +173,5 @@ ul:hover .cross {
   .image {
     width: 32vh;
     height: 30vh;
-  }
-
-  .list-item:focus .cross {
-    transform: rotate(-45deg) translate(10%, 0%);
   }
 }
