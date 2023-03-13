@@ -28,10 +28,6 @@ ul {
   transition: 0.2s;
 }
 
-ul:hover {
-  color: #000;
-}
-
 /* //////////////////////////////////////////////////// */
 
 .list-item {
@@ -83,11 +79,7 @@ ul:hover {
   opacity: 1;
 }
 
-ul:hover .cross {
-  opacity: 1;
-}
-
-ul:hover .list-item:focus .cross {
+.list-item:focus .cross {
   background-image: url(./assets/icons/icons8-умножение-30.png);
 }
 
@@ -125,6 +117,16 @@ ul:hover .list-item:focus .cross {
 
   .list-item:hover .image {
     transform: scale(1);
+  }
+
+  ul:hover {
+    color: #000;
+  }
+  ul:hover .cross {
+    opacity: 1;
+  }
+  ul:hover .list-item:focus .cross {
+    background-image: url(./assets/icons/icons8-умножение-30.png);
   }
 }
 
