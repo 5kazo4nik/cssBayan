@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap');
+
+body {
+  background-color: #f5f5dc;
+  width: 80%;
+  margin: 0 auto 0 auto;
+  padding-top: 4vh;
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 6.5em;
+  font-weight: bold;
+  font-family: 'Inika', serif;
+  padding: 1.2vh 0;
+  border-bottom: 0.3vh solid rgba(197, 197, 231, 0.61);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 3.5em;
+  font-family: 'Inika', serif;
+  font-weight: bold;
+  cursor: pointer;
+  color: rgb(84, 84, 233);
+  transition: 0.5s;
+}
+
+/* //////////////////////////////////////////////////// */
+
+.list-item {
+  height: 3rem;
+  padding: 1vh 0 2vh 0;
+  margin: 0;
+  border-bottom: 0.3vh solid rgba(197, 197, 231, 0.61);
+  overflow: hidden;
+  transition: 0.8s;
+}
+
+.list-item p {
+  margin: 0;
+}
+
+.list-item:focus {
+  height: 45vh;
+  color: #000;
+  outline: none;
+}
+
+.list-item:active {
+  color: rgb(84, 84, 233);
+  opacity: 0.5;
+}
+
+/* ////////////////////////////////////////////////////// */
+
+.list-item__content {
+  margin: 0 0vh 1vh 0vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* //////////////////////////////////////////////////// */
+
+.cross {
+  width: 3vw;
+  height: 3vh;
+  background-image: url(./assets/icons/icons8-крестик-xbox-30.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: 0.8s;
+}
+
+.list-item:focus .cross {
+  /* transform: rotate(-45deg) translate(15%, -30%); */
+  transform: rotate(-45deg);
+}
+
+/* ///////////////////////////////////////////////////////////// */
+
+.image {
+  width: 40vh;
+  height: 38vh;
+  margin: 0 auto 0 auto;
+  transform: scale(0);
+  transition: 0.8s;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.list-item:focus .image {
+  transform: scale(1);
+}
+
+ul:hover .cross {
+  opacity: 1;
+}
+
+@media (hover: hover) {
+  .list-item:hover {
+    height: 45vh;
+  }
+  .list-item:hover .image {
+    transform: scale(1);
+  }
+
+  .list-item:hover .cross {
+    transform: rotate(-45deg);
+  }
+
+  .list-item:hover .image {
+    transform: scale(1);
+  }
+
+  ul:hover {
+    color: rgb(84, 84, 233);
+  }
+
+  ul:hover .list-item:focus .cross {
+    transform: rotate(-45deg);
+  }
+}
+
+@media (max-width: 830px) {
+  h1 {
+    font-size: 7em;
+    margin-bottom: 1.4vh;
+  }
+
+  ul {
+    font-size: 4em;
+  }
+
+  .list-item {
+    padding: 20px 0;
+  }
+
+  .cross {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 5em;
+  }
+
+  ul {
+    font-size: 2.5em;
+  }
+
+  .list-item {
+    padding: 2.5vh 0;
+    height: 5vh;
+  }
+
+  .cross {
+    width: 6vw;
+  }
+
+  .list-item:focus {
+    height: 35vh;
+  }
+
+  .image {
+    width: 32vh;
+    height: 30vh;
+  }
+}
