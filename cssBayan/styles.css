@@ -81,7 +81,7 @@ ul {
 
 .list-item:focus .cross {
   /* background-image: url(./assets/icons/icons8-умножение-30.png); */
-  transform: rotate(-45deg) translate(15%, -50%);
+  transform: rotate(-45deg) translate(15%, -30%);
 }
 
 /* ///////////////////////////////////////////////////////////// */
@@ -121,7 +121,7 @@ ul:hover .cross {
 
   .list-item:hover .cross {
     /* background-image: url(./assets/icons/icons8-умножение-30.png); */
-    transform: rotate(-45deg) translate(15%, -50%);
+    transform: rotate(-45deg) translate(15%, -30%);
   }
 
   .list-item:hover .image {
@@ -137,7 +137,7 @@ ul:hover .cross {
 
   ul:hover .list-item:focus .cross {
     /* background-image: url(./assets/icons/icons8-умножение-30.png); */
-    transform: rotate(-45deg) translate(15%, -50%);
+    transform: rotate(-45deg) translate(15%, -30%);
   }
 }
 
@@ -157,6 +157,10 @@ ul:hover .cross {
 
   .cross {
     opacity: 1;
+  }
+
+  .list-item:focus .cross {
+    transform: rotate(-45deg) translate(10%, 0%);
   }
 }
 
@@ -185,5 +189,9 @@ ul:hover .cross {
   .image {
     width: 32vh;
     height: 30vh;
+  }
+
+  .list-item:focus .cross {
+    transform: rotate(-45deg) translate(10%, 0%);
   }
 }
