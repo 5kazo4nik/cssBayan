@@ -35,7 +35,6 @@ ul:hover {
 /* //////////////////////////////////////////////////// */
 
 .list-item {
-  /* height: 4vh; */
   height: 3rem;
   padding: 1vh 0 2vh 0;
   margin: 0;
@@ -46,10 +45,6 @@ ul:hover {
 
 .list-item p {
   margin: 0;
-}
-
-.list-item:hover {
-  height: 45vh;
 }
 
 .list-item:focus {
@@ -84,12 +79,12 @@ ul:hover {
   transition: 0.3s;
 }
 
-ul:hover .cross {
+.list-item:focus .cross {
   opacity: 1;
 }
 
-.list-item:hover .cross {
-  background-image: url(./assets/icons/icons8-умножение-30.png);
+ul:hover .cross {
+  opacity: 1;
 }
 
 ul:hover .list-item:focus .cross {
@@ -112,12 +107,25 @@ ul:hover .list-item:focus .cross {
   object-fit: cover;
 }
 
-.list-item:hover .image {
+.list-item:focus .image {
   transform: scale(1);
 }
 
-.list-item:focus .image {
-  transform: scale(1);
+@media (hover: hover) {
+  .list-item:hover {
+    height: 45vh;
+  }
+  .list-item:hover .image {
+    transform: scale(1);
+  }
+
+  .list-item:hover .cross {
+    background-image: url(./assets/icons/icons8-умножение-30.png);
+  }
+
+  .list-item:hover .image {
+    transform: scale(1);
+  }
 }
 
 @media (max-width: 830px) {
@@ -151,10 +159,6 @@ ul:hover .list-item:focus .cross {
 
   .cross {
     width: 6vw;
-  }
-
-  .list-item:hover {
-    height: 35vh;
   }
 
   .list-item:focus {
