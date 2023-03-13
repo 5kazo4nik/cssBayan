@@ -36,7 +36,7 @@ ul {
   margin: 0;
   border-bottom: 0.3vh solid rgba(197, 197, 231, 0.61);
   overflow: hidden;
-  transition: 0.3s;
+  transition: 0.8s;
 }
 
 .list-item p {
@@ -72,7 +72,7 @@ ul {
   background-size: contain;
   background-repeat: no-repeat;
   opacity: 0;
-  transition: 0.5s;
+  transition: 0.8s;
 }
 
 .list-item:focus .cross {
@@ -91,7 +91,7 @@ ul {
   height: 38vh;
   margin: 0 auto 0 auto;
   transform: scale(0);
-  transition: 0.3s;
+  transition: 0.8s;
 }
 
 .image img {
